@@ -1,0 +1,27 @@
+{
+  "name": "reduxusingprinciple",
+  "version": "1.0.0",
+  "description": "App using Redux technologies",
+  "main": "index.js",
+  "dependencies": {
+    "redux": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergeew-K-V/ReduxUsingPrinciple.git"
+  },
+  "keywords": [
+    "redux",
+    "js"
+  ],
+  "author": "Sergeew K.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergeew-K-V/ReduxUsingPrinciple/issues"
+  },
+  "homepage": "https://github.com/Sergeew-K-V/ReduxUsingPrinciple#readme"
+}

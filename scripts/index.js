@@ -1,4 +1,5 @@
-import { createStore } from './createStore.js'
+// import { createStore } from './createStore.js'
+import { createStore } from 'redux'
 import { rootReducer } from '../redux/rootReducer.js'
 
 const btnAdd = document.getElementById('btn-add')
@@ -12,15 +13,27 @@ const inputPlace = document.getElementById('input')
 const input = document.getElementById('inputText')
 const btnInput = document.getElementById('button-addText')
 ////
+// const store = createStore(rootReducer, 0)
 const store = createStore(rootReducer, 0)
 
-btnAdd.addEventListener('click', () => {})
-btnSub.addEventListener('click', () => {})
+btnAdd.addEventListener('click', () => {
+  store.dispatch({ type: 'INCREMENT' })
+})
+btnSub.addEventListener('click', () => {
+  store.dispatch({ type: 'DECREMENT' })
+})
 btnAsync.addEventListener('click', () => {})
 btnTheme.addEventListener('click', () => {
   //   document.body.classList.toggle('dark')
 })
 
+store.subscribe(() => {
+  const state = store.getState()
+
+  counterPlace.textContent = state
+})
+
+store.dispatch({ type: 'INIT_APPLICATION' })
 //// Logic input
 
 btnInput.addEventListener('click', () => {})

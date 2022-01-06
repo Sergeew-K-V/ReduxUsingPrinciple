@@ -12,6 +12,7 @@ const btnInput = document.getElementById('button-addText')
 
 const delay = 2000
 let counter = 0
+counterPlace.textContent = counter
 
 function render() {
   counterPlace.textContent = counter.toString()
