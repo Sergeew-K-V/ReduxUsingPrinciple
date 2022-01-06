@@ -2,6 +2,7 @@ const btnAdd = document.getElementById('btn-add')
 const btnSub = document.getElementById('btn-sub')
 const btnAsync = document.getElementById('btn-async')
 const counterPlace = document.getElementById('counter')
+const btnTheme = document.getElementById('btn-theme')
 
 //// Addition Inputs and btns
 const inputPlace = document.getElementById('input')
@@ -30,11 +31,13 @@ btnAsync.addEventListener('click', () => {
     render()
   }, delay)
 })
+btnTheme.addEventListener('click', () => {
+  document.body.classList.toggle('dark')
+})
 
 //// Logic input
 
-function renderInput() {}
-
 btnInput.addEventListener('click', () => {
-  inputPlace.value = input.value
+  inputPlace.innerHTML = input.value
+  input.value = ''
 })

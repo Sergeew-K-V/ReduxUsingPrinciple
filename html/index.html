@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/indext.css" />
     <title>Redux</title>
   </head>
   <body>
@@ -26,17 +27,26 @@
         </ul>
       </header>
       <hr />
-      <div class="d-flex">
-        <span class="counter fs-5 mx-2" id="counter">0</span>
-        <button type="button" class="btn btn-primary mx-2" id="btn-add">
-          Добавить
-        </button>
-        <button type="button" class="btn btn-danger mx-2" id="btn-sub">
-          Убрать
-        </button>
-        <button type="button" class="btn btn-success mx-2" id="btn-async">
-          Асинхронное добавление
-        </button>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <span
+            >Счетчик:<span class="counter fs-5 mx-2" id="counter">0</span></span
+          >
+          <button type="button" class="btn btn-primary mx-2" id="btn-add">
+            Добавить
+          </button>
+          <button type="button" class="btn btn-danger mx-2" id="btn-sub">
+            Убрать
+          </button>
+          <button type="button" class="btn btn-success mx-2" id="btn-async">
+            Асинхронное добавление
+          </button>
+        </div>
+        <div class="d-flex">
+          <button type="button" class="btn btn-warning mx-2" id="btn-theme">
+            Сменить тему
+          </button>
+        </div>
       </div>
       <hr />
       <div class="d-flex">
