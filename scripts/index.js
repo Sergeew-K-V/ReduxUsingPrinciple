@@ -1,5 +1,4 @@
-// import { createStore } from './createStore.js'
-import { createStore } from 'redux'
+import { createStore } from './createStore.js'
 import { rootReducer } from '../redux/rootReducer.js'
 
 const btnAdd = document.getElementById('btn-add')
@@ -24,7 +23,7 @@ btnSub.addEventListener('click', () => {
 })
 btnAsync.addEventListener('click', () => {})
 btnTheme.addEventListener('click', () => {
-  //   document.body.classList.toggle('dark')
+  document.body.classList.toggle('dark')
 })
 
 store.subscribe(() => {
